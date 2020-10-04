@@ -15,9 +15,10 @@ public class ReportGenerator {
 
 
     public static void main(String[]args){
-        String path="C:\\Users\\Eynar\\Desktop\\UCBRepositorios\\ucb_rest\\build\\reports\\cucumber\\";
+        String path="C:\\Users\\Aldo Flores\\Documents\\GITHUB\\tarea2\\build\\reports\\cucumber\\";
 
-        File reportOutPut= new File(path+"finalReportAPI");
+
+        File reportOutPut= new File(path+"tarea2_Reporte");
 
         List<String> jsonFiles = new ArrayList<>();
         jsonFiles.add(path+"report.json");
@@ -25,7 +26,7 @@ public class ReportGenerator {
         Configuration configuration =  new Configuration(reportOutPut,"UCB Diplomado");
         configuration.setBuildNumber("v50.0");
         configuration.addClassifications("SO","Windows");
-        configuration.addClassifications("Owner","Eynar");
+        configuration.addClassifications("Owner","Aldo Flores");
         configuration.addClassifications("Branch","cucumber");
         configuration.addClassifications("Type Report","Local");
 
